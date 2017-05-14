@@ -21,3 +21,4 @@ puts "#{player_name4.capitalize.ljust(40,".")} #{player_health4}"
 puts "".center(100,"*")
 time_example = Time.new
 puts time_example.strftime("The game started on %A %d/%m/%y at %l:%m%p ")
+puts "Hola"
