@@ -1,16 +1,18 @@
+require_relative 'player'
+require_relative 'game'
 
-def say_hello(name = "Sin Nombre",health =99)
-     "Hi, I am #{name.capitalize} and my Health is #{health} as of #{current_time}"
-end
 
-def current_time
-    Time.new.strftime("%I:%M:%S %p")
-end
+player1 = Player.new("moe")
+player2 = Player.new("adan",500)
+player3 = Player.new("ana",799)
 
-puts say_hello("Adan",100)
-puts say_hello("Ana Sofia",150)
-puts say_hello("Felipe A",160)
-puts say_hello("Andres A")
+game = Game.new("Knucleheads")
+game.add_players(player1)
+game.add_players(player2)
+game.add_players(player2)
+game.suerte
+game.play
+
 
 
 
