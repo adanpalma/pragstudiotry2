@@ -13,7 +13,7 @@ class Player
   end
 
   def score
-    " #{@health + @name.length}"
+    @health + @name.length
   end
 
   def w00t
