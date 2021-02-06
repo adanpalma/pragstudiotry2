@@ -25,7 +25,7 @@ class Game
      strong_players, whimpy_players = @players.partition {|player| player.strong?}
 
     puts "\n... Game Statistics ...\n\n"
-    puts "#{strong_players.size} Strong Players \n"
+    puts "#{strong_players.size} Strong Players...... \n"
     strong_players.each do |player|
          puts "#{player.name} ... #{player.health}"
     end
